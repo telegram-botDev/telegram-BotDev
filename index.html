@@ -27,52 +27,6 @@
             margin: 0 auto;
             padding: 40px 0;
         }
-        .bot-card {
-            background-color: #2c2c2c;
-            border: 1px solid #444;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .bot-card img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
-        }
-        .bot-card h3 {
-            margin: 20px 0;
-            font-size: 1.8rem;
-        }
-        .bot-card p {
-            font-size: 1rem;
-            color: #bbb;
-            text-align: center;
-        }
-        .bot-card a {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 10px;
-        }
-        .bot-card a:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-        }
-        footer p {
-            font-size: 0.9rem;
-            color: #bbb;
-        }
         .warning {
             background-color: #ffcc00;
             color: black;
@@ -81,35 +35,60 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        .contact-section {
-            margin-top: 50px;
-            background-color: #333;
-            padding: 40px;
-            border-radius: 10px;
+        .services {
+            margin-bottom: 50px;
         }
-        .contact-section h2 {
+        .services h2 {
             font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .service-card {
+            background-color: #2c2c2c;
+            border: 1px solid #444;
+            border-radius: 10px;
             margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
-        .contact-section form input, .contact-section form textarea {
-            width: 100%;
-            padding: 10px;
+        .service-card img {
+            width: 150px;
+            border-radius: 8px;
+        }
+        .service-card h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .service-card p {
+            font-size: 1rem;
+            color: #bbb;
             margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-            background-color: #444;
-            color: white;
         }
-        .contact-section form button {
-            background-color: #28a745;
+        .contact-button {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            background-color: #007bff;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 5px;
-            border: none;
-            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
         }
-        .contact-section form button:hover {
-            background-color: #218838;
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            font-size: 0.9rem;
+            color: #bbb;
         }
     </style>
 </head>
@@ -126,41 +105,37 @@
         <p><strong>Внимание!</strong> Низкая цена обусловлена тем, что я только начинаю свой путь и беру первые заказы. Некоторые из этих заказов будут отображаться в данном портфолио (если клиент не возражает).</p>
     </div>
 
-    <div class="bot-card">
-        <img src="https://via.placeholder.com/300" alt="Bot Demo">
-        <h3>Бот-магазин</h3>
-        <p>Бот для приёма заказов и управления корзиной. Идеален для малого бизнеса и интернет-магазинов.</p>
-        <a href="https://t.me/yourbotlink" target="_blank">Перейти в бот</a>
+    <div class="services">
+        <h2>Наши услуги</h2>
+        <div class="service-card">
+            <img src="images/image-shop.png" alt="Бот-магазин">
+            <div>
+                <h3>Бот-магазин</h3>
+                <p>Создаём ботов для приёма заказов и управления корзиной. Идеально для малого бизнеса и интернет-магазинов.</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="images/image-statistic.png" alt="Бот для анкеты">
+            <div>
+                <h3>Бот для анкеты</h3>
+                <p>Разрабатываем ботов для сбора данных и генерации отчётов. Подходит для опросов и регистрации.</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="images/image-spam.png" alt="Бот-рассыльщик">
+            <div>
+                <h3>Бот-рассыльщик</h3>
+                <p>Настраиваем ботов для массовых рассылок по спискам подписчиков. Отлично для блогеров и маркетологов.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="bot-card">
-        <img src="https://via.placeholder.com/300" alt="Bot Demo">
-        <h3>Бот для анкеты</h3>
-        <p>Собирает данные с пользователей и генерирует отчёты. Подходит для опросов, регистрации и т.д.</p>
-        <a href="https://t.me/yourbotlink" target="_blank">Перейти в бот</a>
-    </div>
-
-    <div class="bot-card">
-        <img src="https://via.placeholder.com/300" alt="Bot Demo">
-        <h3>Бот-рассыльщик</h3>
-        <p>Бот для массовых рассылок по спискам подписчиков. Подходит для блогеров и маркетологов.</p>
-        <a href="https://t.me/yourbotlink" target="_blank">Перейти в бот</a>
-    </div>
-
-    <div class="contact-section">
-        <h2>Связаться со мной</h2>
-        <form>
-            <input type="text" placeholder="Ваше имя" required>
-            <input type="email" placeholder="Ваш email" required>
-            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
-            <button type="submit">Отправить сообщение</button>
-        </form>
-    </div>
+    <a href="https://t.me/yourtelegram" target="_blank" class="contact-button">Связаться в Telegram</a>
 
 </div>
 
 <footer>
-    <p>&copy; 2025 telegramBot-Dev. Все права защищены.</p>
+    <p>telegramBot-Dev</p>
 </footer>
 
 </body>
