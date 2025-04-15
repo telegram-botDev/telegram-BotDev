@@ -66,19 +66,28 @@
             color: #bbb;
             margin: 10px 0;
         }
-        .contact-button {
+        .contact-button, .test-bot-button {
             display: block;
             width: fit-content;
-            margin: 0 auto;
-            background-color: #007bff;
-            color: white;
+            margin: 10px auto;
             padding: 12px 24px;
             border-radius: 5px;
             text-decoration: none;
+            color: white;
+            text-align: center;
             transition: background-color 0.3s;
+        }
+        .contact-button {
+            background-color: #007bff;
         }
         .contact-button:hover {
             background-color: #0056b3;
+        }
+        .test-bot-button {
+            background-color: #28a745;
+        }
+        .test-bot-button:hover {
+            background-color: #218838;
         }
         footer {
             background-color: #333;
@@ -90,19 +99,26 @@
             font-size: 0.9rem;
             color: #bbb;
         }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="https://telegram-botdev.github.io/telegramBotDev/logo.png" alt="Logo">
+    <img src="images/logo.png" alt="Лого">
     <h1>Портфолио Telegram-ботов</h1>
 </header>
 
 <div class="container">
 
     <div class="warning">
-        <p><strong>Внимание!</strong> Низкая цена обусловлена тем, что я только начинаю свой путь и беру первые заказы. Некоторые из этих заказов будут отображаться в данном портфолио (если клиент не возражает).</p>
+        <p><strong>Внимание!</strong> Низкая цена обусловлена тем, что я только начинаю и беру первые заказы. Некоторые из этих заказов будут отображаться в данном портфолио (если клиент не возражает).</p>
     </div>
 
     <div class="services">
@@ -130,12 +146,13 @@
         </div>
     </div>
 
-    <a href="https://t.me/yourtelegram" target="_blank" class="contact-button">Связаться в Telegram</a>
+    <a href="https://t.me/Butoos0v" target="_blank" class="contact-button">Связаться в Telegram</a>
+    <a href="https://t.me/TestBot" target="_blank" class="test-bot-button">Попробовать тестового бота</a>
 
 </div>
 
 <footer>
-    <p>telegramBot-Dev</p>
+    <p><a href="https://t.me/telegram-BotDev" target="_blank">telegram-BotDev</a></p>
 </footer>
 
 </body>
