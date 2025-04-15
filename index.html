@@ -1,159 +1,82 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио Telegram-ботов</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header img {
-            width: 100px;
-            margin-bottom: 10px;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 40px 0;
-        }
-        .warning {
-            background-color: #ffcc00;
-            color: black;
-            padding: 15px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .services {
-            margin-bottom: 50px;
-        }
-        .services h2 {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .service-card {
-            background-color: #2c2c2c;
-            border: 1px solid #444;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .service-card img {
-            width: 150px;
-            border-radius: 8px;
-        }
-        .service-card h3 {
-            margin: 0;
-            font-size: 1.5rem;
-        }
-        .service-card p {
-            font-size: 1rem;
-            color: #bbb;
-            margin: 10px 0;
-        }
-        .contact-button, .test-bot-button {
-            display: block;
-            width: fit-content;
-            margin: 10px auto;
-            padding: 12px 24px;
-            border-radius: 5px;
-            text-decoration: none;
-            color: white;
-            text-align: center;
-            transition: background-color 0.3s;
-        }
-        .contact-button {
-            background-color: #007bff;
-        }
-        .contact-button:hover {
-            background-color: #0056b3;
-        }
-        .test-bot-button {
-            background-color: #28a745;
-        }
-        .test-bot-button:hover {
-            background-color: #218838;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        footer p {
-            font-size: 0.9rem;
-            color: #bbb;
-        }
-        footer a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Telegram Bot Dev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-    <img src="images/logo.png" alt="Лого">
-    <h1>Портфолио Telegram-ботов</h1>
-</header>
-
-<div class="container">
-
-    <div class="warning">
-        <p><strong>Внимание!</strong> Низкая цена обусловлена тем, что я только начинаю и беру первые заказы. Некоторые из этих заказов будут отображаться в данном портфолио (если клиент не возражает).</p>
-    </div>
-
-    <div class="services">
-        <h2>Наши услуги</h2>
-        <div class="service-card">
-            <img src="images/image-shop.png" alt="Бот-магазин">
-            <div>
-                <h3>Бот-магазин</h3>
-                <p>Создаём ботов для приёма заказов и управления корзиной. Идеально для малого бизнеса и интернет-магазинов.</p>
-            </div>
-        </div>
-        <div class="service-card">
-            <img src="images/image-statistic.png" alt="Бот для анкеты">
-            <div>
-                <h3>Бот для анкеты</h3>
-                <p>Разрабатываем ботов для сбора данных и генерации отчётов. Подходит для опросов и регистрации.</p>
-            </div>
-        </div>
-        <div class="service-card">
-            <img src="images/image-spam.png" alt="Бот-рассыльщик">
-            <div>
-                <h3>Бот-рассыльщик</h3>
-                <p>Настраиваем ботов для массовых рассылок по спискам подписчиков. Отлично для блогеров и маркетологов.</p>
+    <div class="header">
+        <div class="center">
+            <img src="images/logo2.png" class="logo" alt="Логотип">
+            <div class="text-container">
+                <div class="main-text">TelegramBotDev</div>
+                <div class="portfolio-text">портфолио</div>
             </div>
         </div>
     </div>
+    <div class="main">
+        <div class="main-content">
+            <div class="info">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.6177 45.5168C31.312 45.0417 33.8863 44.0406 36.1938 42.5706C38.5012 41.1007 40.4964 39.1906 42.0657 36.9495C43.6349 34.7084 44.7474 32.1802 45.3395 29.5091C45.9317 26.8381 45.9919 24.0766 45.5168 21.3823C45.0418 18.688 44.0406 16.1137 42.5707 13.8062C41.1007 11.4988 39.1906 9.50355 36.9495 7.93432C34.7084 6.36509 32.1802 5.25264 29.5092 4.66049C26.8381 4.00834 24.0766 4.00808 21.3823 4.48316C18.688 4.95824 16.1137 5.95935 13.8063 7.42934C11.4989 8.89932 9.50357 10.8094 7.93434 13.0505C6.36511 15.2916 5.25266 17.8198 4.66051 20.4908C4.06836 23.1619 4.0081 25.9234 4.48318 28.6177C4.95826 31.312 5.95937 33.8863 7.42936 36.1937C8.89934 38.5011 10.8094 40.4964 13.0505 42.0657C15.2916 43.6349 17.8198 44.7473 20.4909 45.3395C23.1619 45.9316 25.9234 45.9919 28.6177 45.5168L28.6177 45.5168Z" stroke="#2A2A2A" stroke-width="2"/>
+                    <path d="M25 25L25 37.5" stroke="#2A2A2A" stroke-width="2" stroke-linecap="square"/>
+                    <path d="M25 14.5833L25 12.5" stroke="#2A2A2A" stroke-width="2" stroke-linecap="square"/>
+                </svg>
+                <span class="info-text">Внимание! Низкая цена обусловлена тем, что мы берем первые заказы. Некоторые из этих заказов будут отображаться в данном портфолио (если клиент не возражает).</span>
+            </div>
+            <section class="services">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="services-container">
+                    <div class="service-card">
+                        <img src="images/korzina.png" class="card-photo" alt="Бот-магазин">
+                        <h3>БОТ-МАГАЗИН</h3>
+                        <p>Создаём ботов для приёма заказов и уведомления корзины. Идеально для малого бизнеса и интернет-магазинов.</p>
+                        <div class="price">490 ₽</div>
+                        <!-- <button class="try-button">опробовать</button> -->
+                        <div class="try">опробовать</div>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/grafik.jpg" class="card-photo" alt="Бот-анкета">
+                        <h3>БОТ-АНКЕТА</h3>
+                        <p>Разрабатываем ботов для сбора данных и генерации отчётов. Подходит для опросов и регистрации.</p>
+                        <div class="price">490 ₽</div>
+                        <div class="try">опробовать</div>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/rassilka.jpg" class="card-photo" alt="Бот-рассылка">
+                        <h3>БОТ-РАССЫЛКА</h3>
+                        <p>Настраиваем ботов для массовых рассылок по спискам подписчиков. Отлично для блогеров и маркетологов.</p>
+                        <div class="price">490 ₽</div>
+                        <div class="try">опробовать</div>
+                    </div>
+                </div>
+            </section>
 
-    <a href="https://t.me/Butoos0v" target="_blank" class="contact-button">Связаться в Telegram</a>
-    <a href="https://t.me/TestBot" target="_blank" class="test-bot-button">Попробовать тестового бота</a>
-
-</div>
-
-<footer>
-    <p><a href="https://t.me/telegram-BotDev" target="_blank">telegram-BotDev</a></p>
-</footer>
-
+            <section class="contacts">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contacts-container">
+                    <div class="contact-card">
+                        <img src="images/acc.png" class="content-photo" alt="QR-код аккаунта">
+                        <div class="content-card-text">
+                            <h3>ТЕЛЕГРАМ <span class='blue'>АККАУНТ</span></h3>
+                            <p>ЛИЧНЫЙ АККАУНТ. ОБРАЩАЙТЕСЬ ПО ВСЕМ ВОПРОСАМ</p>
+                            <a href="https://t.me/teleram_botDev" class="contact-button">ПЕРЕЙТИ</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <img src="images/group.png" class="content-photo" alt="QR-код канала">
+                        <div class="content-card-text">
+                            <h3>ТЕЛЕГРАМ <span class='blue'>КАНАЛ</span></h3>
+                            <p>КАНАЛ В КОТОРОМ МОЖНО ПРЕДВАРИТЕЛЬНО ИЗУЧИТЬ ТОВАР</p>
+                            <a href="https://t.me/TGbotDevelopement" class="contact-button">ПЕРЕЙТИ</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
